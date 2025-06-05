@@ -12,7 +12,8 @@ extension NodeExt on Element {
   bool get isUnderline => localName == 'ins' || localName == 'u';
 
   ///Ensure to detect strikethrough html tags
-  bool get isStrike => localName == 's' || localName == 'del';
+  bool get isStrike =>
+      localName == 's' || localName == 'del' || localName == 'strike';
 
   ///Ensure to detect p html tags
   bool get isParagraph => localName == 'p';
